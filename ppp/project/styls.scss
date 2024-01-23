@@ -1,0 +1,322 @@
+$ctext: #1f3e59;
+$ctext2: #3a3d3ee4;
+ 
+body{
+    background-color: rgba(26, 137, 234, 0.192);
+    font-family: "Oswald", sans-serif;
+    font-optical-sizing: auto;
+    overflow-x: hidden;
+}
+.title{
+    background-color: rgba(0, 255, 255, 0);
+    width: 540px;
+    height: 340px;
+    padding: 10px; 
+    position: absolute;
+    top: 50px;
+    left: 25%;
+    font-size: 50px;
+    color:$ctext;
+    h1{
+        margin-bottom: 0px;
+        color: $ctext2;
+        font-weight: 600;
+    }
+    .cl{
+        margin-top: -40px;
+        color: $ctext;
+    }
+}
+.division{
+    width: 98%;
+    height: 130px;
+    background-color: white;
+    padding: 5px;
+    position: absolute;
+    top: 628px;
+    .log{
+        width: 80px;
+        height: 80px;
+        background-color: rgba(177, 152, 152, 0.194);
+        border-radius:50px ;
+        margin-top: 20px;
+        margin-left: 230px;
+    }
+    .parag{
+        position: relative;
+        left: 320px;
+        top: -60px;
+        margin: 0px;
+    }
+    .log-img{
+        width: 79px;
+        height: 79px;
+        border-radius: 50px;
+         margin-left: 0.5px;
+    }
+
+    .pp{
+        width: 200px;
+        display: flex;
+        text-decoration: underline;
+        position: relative;
+        top: -142px;
+        left: 56%;
+        font-family:italic;
+        font-weight:600;
+        color: $ctext2;
+    }
+    .hist2{
+        margin-left: 15px;
+    }
+}
+.imaM{
+    top: 770px;
+    position: absolute;
+    height: 980px;
+    width: 98.85%;
+    left: 7px;
+}
+.sec2-{
+    height: 640px;
+    position: absolute;
+    h2{
+        font-size: 200px;
+        position: relative;
+        top: 50px;
+        left: 220px;
+        color: #1d2f3e97;
+    }
+    .parag2{
+        position: relative;
+        top: -270px;
+        left: 415px;
+        font: 700;
+        color:#162a3c;
+        font-size: 50px;
+    } 
+    .parag2p{
+        position: relative;
+        width: 60%;
+        top: -300px;
+        left: 415px;
+    }
+    .pictures{
+        position: relative;
+        width: 99.35%;
+        height: 350px;
+        left: 0px;
+        top: -97px;
+        background-color: rgba(44, 71, 95, 0.842);
+        display: flex; 
+        justify-content: center;
+    .imgs{
+        margin: 10px;
+        width: 250px;
+        height: 200px;
+    }}
+    
+}
+ .divition{
+    width: 98.7%;
+    height: 180px;
+    background-color: white;
+    position: absolute;
+    top: 1119px;
+    padding: 5px;
+
+    h3{
+        font-size: 150px;
+        position: relative;
+        top: -160px;
+        left: 200px;
+        color:  #1d2f3e97;
+    }
+    .parag3{
+        font-size: 50px;
+        position: relative;
+        top: -440px;
+        left: 365px;
+        color: $ctext;
+        font-weight: 600;
+    }
+    .parag3p{
+        position: relative;
+        top: -570px;
+        left: 490px;
+        width: 60%;
+    }
+}
+ 
+
+@media screen and ( max-width: 450px){
+ body{
+    background-color: #1f3e59;
+    overflow-x: hidden;   
+ 
+ }
+ .title{
+ 
+    font-size: 30px;
+    left: 15px;
+    top: 150px;
+ }
+ .division{
+        width: 387.4px;
+        height: 130px;
+ 
+    .log{
+        background-color: #162a3c25;
+        left: -40px;
+    }
+    .log-img{
+        position: relative;
+        top: -25px;
+        left: -220px;    
+    }
+    .pp{
+        position: relative;
+        left: 240px;
+        width: 25px;
+        text-wrap: wrap;
+    }
+    .parag{
+        left: 10px;
+        top: -25px;
+    }
+ }
+ .imaM{
+    width: 96.4%;
+ }
+ h2{
+    font-size: 20px;
+    margin-left: -205px;
+    margin-top: 20px;
+ }
+  .parag2p{
+    font-size: 10px;
+    margin-left: -415px;
+    margin-top: 100px;
+    width: 100%;
+    height: 75px;
+  }
+  .parag2{
+    font-size: 20px;
+    margin-left: -205px;
+  }
+  .rem{
+    width: 665px;
+  }
+.sec2-{
+    .pictures{
+        // width: 36.8%;
+        width: 38%;
+        display: flex;
+        overflow: scroll;
+        flex-wrap: nowrap ;
+        left: -23px;
+        padding: 0 15px;
+        box-sizing: border-box;
+        justify-content: start;
+        .imgs{
+            flex: 1 auto;
+            margin: 0 10px;
+            height: 300px;
+        }
+    }
+}
+.divition{
+    width: 35%;
+    height: 180px;
+    background-color: white;
+    position: absolute;
+    top: 1119px;
+    padding: 5px;
+    font-size: 15px;
+
+
+    h3{
+        font-size: 140px;
+        position: relative;
+        top: -160px;
+        left: 0px;
+        color:  #1d2f3e97;
+    }
+    .parag3{
+        font-size: 40px;
+        position: relative;
+        top: -415px;
+        left: 150px;
+        color: $ctext;
+        font-weight: 600;
+    }
+    .parag3p{
+        position: relative;
+        top: -550px;
+        left: 150px;
+        width: 60%;
+        font-size: 10px;
+    }
+}
+#sec3{
+    background-color: #1f3e59;
+    position: absolute;
+    top: 1310px;
+    width: 99.5%;
+    height: 500px;
+    margin-bottom: 10px;
+
+    .img3{
+        width:400px; 
+        height:650px;
+    }
+    nav{
+        width: 400px;
+        padding: 5px;
+        display: flex;
+        justify-content: center;
+        position: relative;
+        top: 2px;
+        background-color: #1f3e59;
+    }
+    .mountain{
+        width: 175px;
+        height: 40px;
+        font-size: 30px;
+        color: aliceblue;
+        margin-left: 5px;
+        margin-right: 5px;
+        padding: 5px;
+        background-color:#355571;
+    }
+    .unoo{
+        background-color: #adbdc3;
+        text-decoration: underline;
+    }
+    h4{
+        font-size: 45px;
+        position: relative;
+        top: -50px;
+        text-align: center;
+        color: $ctext;
+    }
+    #horario{
+        width:350px;
+        height: 400px;
+        background-color: rgba(173, 189, 195, 0.76);
+        position: relative;
+        top: -500px;
+        left: 5px;
+        font-size: 18px;
+        padding: 20px;
+        text-align: center;
+    }
+    
+}
+
+
+}
+    
+
+
+
