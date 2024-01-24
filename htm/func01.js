@@ -127,9 +127,11 @@ valid.addEventListener('click', function(){
                     if(edad.value >= 18){
                         validd();
                         console.log('si lo es');
+                         alert(`Disfrta la estacia ${Nam.value}`);
                     }else{
                         validdd();
                         console.log('no lo es');
+                        alert(`Disfrta ${Nam.value}`);
                     } 
                 }else{
                     console.log('4Error');
