@@ -45,6 +45,37 @@ body {
   background-color: #da6e6e;
   margin: 20px;
 }
+.rojo .contenedor2 .nav2 {
+  background-color: rgba(69, 107, 107, 0.4117647059);
+  width: 63%;
+  border-radius: 2px;
+  height: 50px;
+  font-size: 15px;
+  margin: 5px;
+  position: fixed;
+  padding: 1px;
+  overflow: hidden;
+  display: flex;
+}
+.rojo .contenedor2 .nav2 .nav2__div {
+  color: #ffffff;
+}
+.rojo .contenedor2 .nav2 #gett2 {
+  background-color: #ffffff;
+  color: hsl(0, 0%, 0%);
+  position: absolute;
+  border: 1px solid transparent;
+  border-radius: 3px;
+  left: 85%;
+  top: 10px;
+  width: 100px;
+  padding: 5px;
+  font-size: 20px;
+}
+.rojo .contenedor2 .nav2 #gett2:hover {
+  background-color: #000000;
+  color: #ffffff;
+}
 
 .verde {
   background-color: rgb(80, 255, 0);
@@ -74,6 +105,37 @@ body {
   height: 360px;
   background-color: #ffffff;
   margin: 20px;
+}
+.verde .contenedor1 .nav1 {
+  background-color: rgba(69, 107, 107, 0.4117647059);
+  width: 63%;
+  border-radius: 2px;
+  height: 50px;
+  font-size: 15px;
+  margin: 5px;
+  position: fixed;
+  padding: 1px;
+  overflow: hidden;
+  display: flex;
+}
+.verde .contenedor1 .nav1 .nav2__div {
+  color: #ffffff;
+}
+.verde .contenedor1 .nav1 #gett1 {
+  background-color: #ffffff;
+  color: hsl(0, 0%, 0%);
+  position: absolute;
+  border: 1px solid transparent;
+  border-radius: 3px;
+  left: 85%;
+  top: 10px;
+  width: 100px;
+  padding: 5px;
+  font-size: 20px;
+}
+.verde .contenedor1 .nav1 #gett1:hover {
+  background-color: #000000;
+  color: #ffffff;
 }
 
 #app {

@@ -12,9 +12,16 @@ const showD = document.querySelector('.showder');
 
 const content1 = document.querySelector('.contenedor1');
 const contenDiv1 = document.querySelector('.contenedor1--div');
+const nav1 = document.querySelector('.nav1');
+const h21 = document.querySelector('.uno');
+
 
 const content2 = document.querySelector('.contenedor2');
 const contenDiv2 = document.querySelector('.contenedor2--div');
+const nav2 = document.querySelector('.nav2');
+const h22 = document.querySelector('.dos');
+
+
 
 let vir = true;
 
@@ -127,11 +134,11 @@ valid.addEventListener('click', function(){
                     if(edad.value >= 18){
                         validd();
                         console.log('si lo es');
-                         alert(`Disfrta la estacia ${Nam.value}`);
+                        h22.innerText=`Contenido para ${Nam.value}:)`
                     }else{
                         validdd();
                         console.log('no lo es');
-                        alert(`Disfrta ${Nam.value}`);
+                        h21.innerText=` Contenido para ${Nam.value} :)`;
                     } 
                 }else{
                     console.log('4Error');
@@ -162,26 +169,16 @@ valid.addEventListener('click', function(){
 
     content1.style.display= 'none';
     content2.style.display= 'grid';
-  /*  contenDiv2.style.display= 'none';
-
-    content1.style.display= 'grid';
-    contenDiv1.style.display= 'block';
-*/
+ 
  }
- //esta mostrara ya contenido de todo tipo
+ 
  function validdd(){
     dib.classList.remove('rojo');
     dib.classList.add('verde');
-/*
-    content1.style.display= 'none';
-    contenDiv1.style.display= 'none';
-
-    contenDiv2.style.display= 'block';
-    */
+ 
     content2.style.display= 'none';
     content1.style.display= 'grid';
  }
-
  
  // hasta donde yo se en este codigo solo hay un error esponencial a en la parte del cliente //
  //pues al solo validar el ultimo de todos los input puede acceder alguien que no es permitido h 
@@ -196,7 +193,14 @@ valid.addEventListener('click', function(){
         showD.classList.add('show');
         dib.style.left='1%';
         dib.style.width='98%';
-        dib.style.transition='2s'
+        dib.style.transition='2s';
+        nav2.style.width= '92.5%';
+        nav2.style.height= '60px';
+        nav2.style.transition='2s';
+
+        nav1.style.width= '92.5%';
+        nav1.style.height= '60px';
+        nav1.style.transition='2s';
         vir = false;   
     }else{
         app.style.left="10px";
@@ -206,10 +210,40 @@ valid.addEventListener('click', function(){
         dib.style.left='32%';
         dib.style.width='855px';
         dib.style.transition='2s';
+        nav2.style.width= '63%';
+        nav2.style.height= '50px';
+        nav2.style.transition='2s';
+
+        nav1.style.width= '63%';
+        nav1.style.height= '50px';
+        nav1.style.transition='2s';
         vir = true;   
     }
 });
+ //
+
+ function ajax(){
+    const http = new XMLHttpRequest();
+    const url = 'http://127.0.0.1:5500/htm/index2.html';
+    http.onreadystatechange = function(){
+        if(this.readyState == 4 && this.status == 200){
+
+        document.getElementById('uno').innerHTML = this.responseText;  
+        }
+    }
+    http.open("GET", url, true);
+    http.send();
+}
+
+document.getElementById("gett1").addEventListener('click', function(){
+    ajax();
+});
+/*
+document.getElementById("gett2").addEventListener('click', function(){
+    ajax();
+});*/
  
+
 
 
 

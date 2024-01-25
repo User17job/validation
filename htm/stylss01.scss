@@ -50,6 +50,38 @@ body{
             background-color: #da6e6e;
             margin: 20px;
         }
+        .nav2{
+            background-color: #456b6b69;
+            width: 63%;
+            border-radius: 2px;
+            height: 50px;
+            font-size: 15px;
+            margin: 5px;
+            position: fixed;
+            padding: 1px;
+            overflow: hidden;
+            display: flex;
+            .nav2__div{
+              color: #ffffff;
+            }
+            #gett2{
+                background-color: #ffffff;
+                color: hsl(0, 0%, 0%);
+                position: absolute;
+                border: 1px solid transparent;
+                border-radius: 3px;
+                left: 85%;
+                top: 10px;
+                width: 100px;
+                padding: 5px;
+                font-size: 20px;
+            }
+            #gett2:hover{
+                background-color: #000000;
+                color: #ffffff;
+            }
+            
+        }
     }
 
 }
@@ -81,6 +113,38 @@ body{
             height: 360px;
             background-color: #ffffff;
             margin: 20px;
+        }
+        .nav1{
+            background-color: #456b6b69;
+            width: 63%;
+            border-radius: 2px;
+            height: 50px;
+            font-size: 15px;
+            margin: 5px;
+            position: fixed;
+            padding: 1px;
+            overflow: hidden;
+            display: flex;
+            .nav2__div{
+              color: #ffffff;
+            }
+            #gett1{
+                background-color: #ffffff;
+                color: hsl(0, 0%, 0%);
+                position: absolute;
+                border: 1px solid transparent;
+                border-radius: 3px;
+                left: 85%;
+                top: 10px;
+                width: 100px;
+                padding: 5px;
+                font-size: 20px;
+            }
+            #gett1:hover{
+                background-color: #000000;
+                color: #ffffff;
+            }
+            
         }
     }
  
@@ -191,7 +255,6 @@ label:nth-child(16){
     padding: 10px;
     width: 75px;
 }
- 
  /* Bounce To Right */
 #valid{
     display: inline-block;
@@ -237,5 +300,7 @@ label:nth-child(16){
     transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
   }
   
+
   
+
    
