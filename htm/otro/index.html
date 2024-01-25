@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lienzo en blanco</title>
+    <style type="text/css">
+        body{
+            overflow: hidden;
+        }
+        .apk{
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            background-color: rgb(23, 54, 81);
+            width: 1150px;
+            position: relative;
+            left: 40px;
+            top: 5px;
+            height: 580px;
+            padding: 10px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 15px rgb(40, 87, 139);
+            overflow-x: hidden;
+            overflow-y: auto;
+        }
+        #apk::-webkit-scrollbar-track {
+            background: rgb(0, 242, 255); 
+            border-radius: 5px; 
+        }
+        #apk::-webkit-scrollbar {
+            width: 12px;
+            background-color: rgb(255, 0, 0);
+            border-radius: 5px; 
+        }
+        #apk::-webkit-scrollbar-thumb {
+            background-color: rgb(0, 188, 25); /* color del botón de desplazamiento */
+            border-radius: 20px; /* redondez del botón de desplazamiento */
+            border: 3px solid rgba(160, 255, 183, 0.445); /* crea un relleno alrededor del botón de desplazamiento */
+        }
+        .im2{
+            width:  100%;
+            height: 630px;
+            position: absolute;
+            background-color: rgb(0, 188, 25);
+            left: -0px;
+            top: 0;
+            z-index: -0;
+        }
+        #apk__nav{
+            z-index: 11;
+            width: 90%;
+            padding: 10px;
+            border-radius: 5px;
+            margin: auto;
+            margin-top: 5px;
+            background-color: rgba(0, 242, 255, 0.616);
+            box-shadow: 0px 0px 5px rgb(0, 242, 255);
+            display: flex;
+            justify-content: space-around;
+        }
+        a{
+            text-decoration: none;
+        }
+        .nav-but{
+            width: 100px;
+            height: 30px;
+            border-radius: 5px;
+            background-color: rgba(16, 232, 232, 0.737);
+            margin-right: 120px;
+            font-size: 20px;
+            opacity: 15%;
+            color: aliceblue;
+            border: 1px solid rgb(167, 194, 235);
+            text-decoration: none;
+        }
+        .nav-but:hover{
+            opacity: 100%;
+        }
+        .nav-div{
+            font-size: 30px;
+            color: aliceblue; 
+            font-weight: 600;
+            margin-right: -20px;
+         
+        }
+        .nav-link{
+            margin-left: 250px;
+            width: 120px;
+            height: 20px;
+            background-color:rgba(16, 232, 232, 0.737);
+            padding: 7px;
+            border-radius:10px;
+            text-decoration: none;
+            opacity: 15%;
+            color: aliceblue;
+            text-align: center;
+            
+        }
+        .nav-link:hover{
+            opacity: 100%;
+        }
+        .rte{
+            z-index: 2;
+            background-color: azure;
+            width: 700px;
+            height: 700px;
+            margin: 10px;
+            padding: 5px;
+            border-radius: 2px;
+            position: relative;
+            left: 35px;
+        }
+        .change{
+            width: 180px;
+            background-color: aquamarine;
+            height: 43px;
+            padding: 20px;
+            opacity:25% ;
+            left: 76%;
+            top: 80px;
+            border-radius: 5px;
+            position: absolute;
+        }
+        .change:active{
+            opacity: 100%;
+        }
+        .change:hover{
+            opacity: 100%;
+        }
+        input{
+            width: 170px;
+            height: 25px;
+        }
+        #btn5{
+            text-decoration: none;
+        }
+    
+    </style>
+</head>
+<body>
+    <img src="#" alt="." class="im2">
+    
+    <section id="apk" class="apk">
+            <div class="change">
+                Titulo de sitio
+                <button id="btn5">actualizar</button>
+                <input type="text" id="ext" placeholder="cambiar titulo" >
+            </div>
+   
+        <nav id="apk__nav">
+                <button class="nav-but" id="btn3"><a href="http://127.0.0.1:5500/htm/index.html">Back</a></button> 
+                <div class="nav-div" id="nav--user">_Boss_</div>
+                <a href="#" class="nav-link" id="nav--div">Master's web</a>
+            </nav>
+                <div class="rte">
+                    <div class="content">
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorum et similique praesentium repudiandae quae beatae accusantium nihil, cupiditate culpa fugit officiis fugiat possimus distinctio rerum voluptas ratione molestias, non sint!
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Animi eveniet harum ipsa consequuntur incidunt unde, illo, expedita nemo autem natus vitae aliquid repellat inventore itaque iste perspiciatis? Fugit, quasi ipsa!\
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur obcaecati neque consectetur ipsa? Autem eum iusto eaque possimus doloremque aspernatur veniam quasi, nihil incidunt explicabo omnis rem, quidem fugit! Esse Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corrupti esse nihil blanditiis quae quis odio, accusamus dolorum. Ab illo impedit quae in consequuntur voluptatem aliquid eveniet aliquam, doloremque at. Quae.
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto recusandae nesciunt magnam placeat culpa dicta cupiditate ratione, unde hic ipsa ex debitis a amet, facilis minus vitae ad pariatur beatae?
+                    </div>
+                </div> 
+              
+
+        </section>
+
+        <script>
+            let nam = document.querySelector('.nav-div');
+            let tes = document.getElementById('ext');
+            let ses = document.getElementById('btn5');
+
+
+            // nam = prompt ("¿Cómo te llamas?", "");
+
+            ses.addEventListener('click', function(){
+                nam.innerText =`_ ${tes.value}_`;
+            });
+            
+            // ( function (){
+            // }) ();
+ 
+        </script>    
+</body>
+</html>
