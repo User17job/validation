@@ -10,19 +10,6 @@ const texto3 = document.getElementById('text3');
 const dib = document.getElementById('app2');
 const showD = document.querySelector('.showder');
 
-const content1 = document.querySelector('.contenedor1');
-const contenDiv1 = document.querySelector('.contenedor1--div');
-const nav1 = document.querySelector('.nav1');
-const h21 = document.querySelector('.uno');
-
-
-const content2 = document.querySelector('.contenedor2');
-const contenDiv2 = document.querySelector('.contenedor2--div');
-const nav2 = document.querySelector('.nav2');
-const h22 = document.querySelector('.dos');
-
-
-
 let vir = true;
 
 // las variable mas impoortante pues de esta se validara si si o si no se muestra el contenido  
@@ -134,148 +121,38 @@ valid.addEventListener('click', function(){
                     if(edad.value >= 18){
                         validd();
                         console.log('si lo es');
-                        h22.innerText=`Contenido para ${Nam.value}:)`
+                        h22.innerText=`Contenido para ${Nam.value}:)`;
+
                     }else{
                         validdd();
                         console.log('no lo es');
                         h21.innerText=` Contenido para ${Nam.value} :)`;
+
                     } 
                 }else{
                     console.log('4Error');
-                    dib.classList.remove('verde');
-                    dib.classList.remove('rojo');
+                    alert('weeeeeeeeee');
                 }
             }else{
                 console.log('3Error');
-                dib.classList.remove('verde');
-                dib.classList.remove('rojo');
+                alert('weeeeeee');
             }
         }else{
             console.log('2Error');
-            dib.classList.remove('verde');
-            dib.classList.remove('rojo');
+            alert('weeee');
         }
     }else{
         console.log('1Error')
         alert('cumple con los estatutos we');
-        dib.classList.remove('verde');
-        dib.classList.remove('rojo');
     }
 });
  //esta funcion mostrara contenido fuera de la clase +A Y B
  function validd(){
-    dib.classList.remove('verde');
-    dib.classList.add('rojo');
-
-    content1.style.display= 'none';
-    content2.style.display= 'grid';
- 
+    window.location.href = "http://127.0.0.1:5500/Main/index.html";
  }
- 
  function validdd(){
-    dib.classList.remove('rojo');
-    dib.classList.add('verde');
- 
-    content2.style.display= 'none';
-    content1.style.display= 'grid';
- }
- 
- // hasta donde yo se en este codigo solo hay un error esponencial a en la parte del cliente //
- //pues al solo validar el ultimo de todos los input puede acceder alguien que no es permitido h 
- 
- //ya lo resolvi :)
-
- showD.addEventListener('click', function(){
-    if(vir==true){
-        app.style.left="-500px";
-        app.style.transition="2s";
-        showD.classList.remove('showder');
-        showD.classList.add('show');
-        dib.style.left='1%';
-        dib.style.width='98%';
-        dib.style.transition='2s';
-        nav2.style.width= '92.5%';
-        nav2.style.height= '60px';
-        nav2.style.transition='2s';
-
-        nav1.style.width= '92.5%';
-        nav1.style.height= '60px';
-        nav1.style.transition='2s';
-        vir = false;   
-    }else{
-        app.style.left="10px";
-        app.style.transition="2s";
-        showD.classList.remove('show');
-        showD.classList.add('showder');
-        dib.style.left='32%';
-        dib.style.width='855px';
-        dib.style.transition='2s';
-        nav2.style.width= '63%';
-        nav2.style.height= '50px';
-        nav2.style.transition='2s';
-
-        nav1.style.width= '63%';
-        nav1.style.height= '50px';
-        nav1.style.transition='2s';
-        vir = true;   
-    }
-});
- //
-/*
- function ajax(){
-    const http = new XMLHttpRequest();
-    const url = 'http://127.0.0.1:5500/htm/otro/index.html';
-    http.onreadystatechange = function(){
-        if(this.readyState == 4 && this.status == 200){
-
-        document.getElementById('uno').innerHTML = this.responseText;  
-        }
-    }
-    http.open("GET", url, true);
-    http.send();
+    window.location.href = "http://127.0.0.1:5500/Master/index.html";
 }
-
-*/
- function peticion0(){
-    const http = new XMLHttpRequest();
-    const url = 'http://127.0.0.1:5500/htm/otro1/index.html';
-    http.onreadystatechange = function(){
-        if(this.readyState == 4 && this.status == 200){
-
-        document.getElementById('uno').innerHTML = this.responseText;  
-        }
-    }
-    http.open("GET", url, true);
-    http.send();
-}
-
-document.getElementById("gett2").addEventListener('click', function(){
-    peticion0();
-});
-//
-//
-//
- function peticion1(){
-    const http = new XMLHttpRequest();
-    const url = 'http://127.0.0.1:5500/htm/otro/index.html';
-    http.onreadystatechange = function(){
-        if(this.readyState == 4 && this.status == 200){
-
-        document.getElementById('uno').innerHTML = this.responseText;  
-        }
-    }
-    http.open("GET", url, true);
-    http.send();
-}
-
-document.getElementById("gett1").addEventListener('click', function(){
-    peticion1();
-});
- 
-
- 
-
-
 
 const nam = document.querySelector('.nav-div');
 const tes = document.querySelector('#ext');
