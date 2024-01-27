@@ -148,10 +148,10 @@ valid.addEventListener('click', function(){
 });
  //esta funcion mostrara contenido fuera de la clase +A Y B
  function validd(){
-    window.location.href = "http://127.0.0.1:5500/Main/index.html";
+    window.location.href = "http://127.0.0.1:5500/Main/index.html" || 'https://genuine-fenglisu-2e8647.netlify.app/';
  }
  function validdd(){
-    window.location.href = "http://127.0.0.1:5500/Master/index.html";
+    window.location.href = "http://127.0.0.1:5500/Master/index.html" || "https://loquacious-snickerdoodle-5feb78.netlify.app/";
 }
 
 const nam = document.querySelector('.nav-div');
