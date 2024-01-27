@@ -1,5 +1,6 @@
 body{
     overflow: hidden;
+    background-image: linear-gradient(75deg, red 0%, blue 99%);
 }
 .apk{
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -33,7 +34,7 @@ body{
     width:  100%;
     height: 630px;
     position: absolute;
-    background-color: rgb(188, 0, 0);
+    background-color: rgba(188, 0, 0, 0);
     left: -0px;
     top: 0;
     z-index: -0;
@@ -95,7 +96,7 @@ a{
     z-index: 2;
     background-color: azure;
     width: 1050px;
-    height: 100px;
+    height: 500px;
     margin: 10px;
     padding: 5px;
     border-radius: 2px;
@@ -108,8 +109,8 @@ a{
     height: 43px;
     padding: 20px;
     opacity:25% ;
-    left: 78%;
-    top: 15px;
+    left: 78.5%;
+    top: 10px;
     border-radius: 5px;
     position: absolute;
     display: block;

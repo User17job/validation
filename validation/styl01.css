@@ -1,5 +1,5 @@
 body {
-  background-color: #000000;
+  background-image: linear-gradient(75deg, blue 0%, rgb(0, 234, 255) 99%);
   display: flex;
   overflow: hidden;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
