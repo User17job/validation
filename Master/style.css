@@ -49,8 +49,8 @@ body{
     margin: auto;
     margin-left: 45px;
     margin-top: 5px;
-    background-color: rgba(0, 242, 255, 0.616);
-    box-shadow: 0px 0px 5px rgb(0, 242, 255);
+    background-color: rgba(0, 242, 255, 0.432);
+    box-shadow: 1px 1px 1px rgb(0, 242, 255);
     display: flex;
     justify-content: space-around;
 }
@@ -58,45 +58,67 @@ a{
     text-decoration: none;
 }
 .nav-but{
-    width: 100px;
-    height: 30px;
+    width: 120px;
+    height: 40px;
     border-radius: 5px;
-    background-color: rgba(16, 232, 232, 0.737);
+    background-color: rgba(16, 232, 232, 0); 
     margin-right: 120px;
     font-size: 20px;
-    opacity: 15%;
+    opacity: 25%;
     color: aliceblue;
-    border: 1px solid rgb(167, 194, 235);
+    border: 5px solid  rgb(0, 242, 255);
     text-decoration: none;
 }
 .nav-but:hover{
     opacity: 100%;
 }
 .nav-div{
-    font-size: 30px;
-    color: aliceblue; 
+    font-size: 120px;
+    color: rgb(173, 212, 245); 
     font-weight: 600;
-    margin-right: -20px;
- 
+    /* margin-right: 0px; */
+    position: relative;
+    left: 20%;
+    top: 100px;
+}
+.nav-div:nth-child(3){
+    position: relative;
+    top: -30px;
+    color: rgb(87, 108, 82);
+    animation: muv 2s linear infinite;
+    
+}
+@keyframes muv{
+    0%{
+        transform: translate(0, 7px);   
+        color: rgb(0, 255, 0);     
+    }50%{
+        transform: translate(0, -5px);
+        color: black;
+    }100%{
+        transform: translate(0, 7px);
+        color: rgb(0, 51, 255);
+    }
+
 }
 .nav-link{
     margin-left: 250px;
     width: 120px;
     height: 20px;
-    background-color:rgba(16, 232, 232, 0.737);
+    /* background-color:rgba(16, 232, 232, 0.737); */
     padding: 7px;
     border-radius:10px;
     text-decoration: none;
-    opacity: 15%;
+    opacity: 20%;
     color: aliceblue;
     text-align: center;
-    
+    border: 5px solid  rgb(0, 242, 255);
 }
 .nav-link:hover{
     opacity: 100%;
 }
 .rte{
-    background-color: rgba(89, 242, 242, 0.692);
+    background-color: rgba(68, 102, 102, 0.233);
     width: 1047px;
     height: 500px;
     margin: 10px;
@@ -111,13 +133,107 @@ a{
     display: grid;
     grid-template-columns: auto auto;
     position: relative;
-    top: 520px;
+    top: 0px;
     left: -6px;
     padding: 6px;
     border-radius: 5px;
     bottom: -50px;
     margin-bottom: 5px;
 }
+.dip{
+    width: max-content;
+    margin: 50px auto ;
+    border-right: 3px solid ;
+    animation: typing 3s steps(50), efecto .5s step-end infinite  alternate-reverse;
+}
+@keyframes typing {
+    from{
+        clip-path: polygon(0 0, 0 0, 0 100%, 0% 100%);
+    }to{
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+    }    
+}
+@keyframes efecto { 
+    50%{
+        border-color:  rgba(13, 211, 218, 0.929);
+    }
+}
+.dip-p{
+    color:rgb(175, 175, 255) ;
+    font-family: "Pixelify Sans", sans-serif;
+}
+.dip-p:nth-child(1){
+    font-size: 30px;
+    position: relative;
+    top: -10px;
+}
+.dip-p:nth-child(2){
+    position: relative;
+    top: -15px;
+}
+.dip-p:nth-child(3){
+    position: relative;
+    top: -10px;
+    font-size: 17px;
+}
+.dip-p:nth-child(4){
+    position: relative;
+    top: -10px;
+    color: aliceblue;
+}
+
+.anim{
+    top: -400px;
+    left: 20px;
+}
+.anim {
+    margin: 50px 0;
+    position: relative;
+    display: block;
+    color: rgb(255, 255, 255);
+    width: 0px;
+    height: 0px;
+    border-right: 60px solid transparent;
+    border-bottom: 40px solid rgb(0, 255, 8);
+    border-left: 60px solid transparent;
+    transform: rotate(35deg);
+    animation: muv2 5s linear infinite;
+    box-shadow:0px 0px 5px rgb(19, 148, 194) ;
+}
+@keyframes muv2{
+  from{transform: rotate(0deg);}to{transform: rotate(360deg);}
+}
+.anim:before {
+    border-bottom: 40px solid rgb(0, 198, 216);
+    border-left: 17px solid transparent;
+    border-right: 17px solid transparent;
+    position: absolute;
+    height: 0;
+    width: 0;
+    top: -28.3px;
+    left: -43px;
+    display: block;
+    content: '';
+    transform: rotate(-35deg);
+    box-shadow:0px 0px 5px rgb(12, 0, 182) ;
+}
+.anim:after {
+    position: absolute;
+    display: block;
+    color: rgb(76, 0, 255);
+    top: 6px;
+    left: -70px;
+    width: 0px;
+    height: 0px;
+    border-right: 60px solid transparent;
+    border-bottom: 40px solid rgb(0, 51, 255);
+    border-left: 60px solid transparent;
+    transform: rotate(-70deg);
+    content: '';
+    box-shadow:0px 0px 5px rgb(21, 223, 55) ;
+
+}
+ 
 .content--div{
     width: 475px;
     height: 400px;

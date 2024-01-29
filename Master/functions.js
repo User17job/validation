@@ -1,4 +1,5 @@
 let nam = document.getElementById('nav--user');
+let nam2 = document.getElementById('nav--use');
 let tes = document.getElementById('ext');
 let ses = document.getElementById('btn5');
 
@@ -7,6 +8,7 @@ let ses = document.getElementById('btn5');
 
 ses.addEventListener('click', function(){
     nam.innerText =`_ ${tes.value}_`;
+    nam2.innerText =`_ ${tes.value}_`;
 });
 
 // ( function (){
@@ -32,6 +34,19 @@ function play2(){
         if(this.readyState == 4 && this.status == 200){
 
         document.getElementById('app0').innerHTML = this.responseText;  
+        }
+    }
+    http.open("GET", url, true);
+    http.send();
+}
+
+function play3(){
+    const http = new XMLHttpRequest();
+    const url = "http://127.0.0.1:5500/Master/TicTacToe/index.html"
+
+    http.onreadystatechange = function(){
+        if(this.readyState == 4 && this.status == 200){
+            document.getElementById('app0').innerHTML = this.responseText;
         }
     }
     http.open("GET", url, true);
