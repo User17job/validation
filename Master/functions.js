@@ -61,6 +61,10 @@ function play11(){
     const url = "https://upyy-memoria.netlify.app"
     window.location.href = url;
 }
+function play12(){
+    const url = "https://upyy-appdetareas.netlify.app"
+    window.location.href = url;
+}
  
 
  
