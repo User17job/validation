@@ -16,10 +16,10 @@ ses.addEventListener('click', function(){
 
 function play1(){
     const http = new XMLHttpRequest();
-    const url = 'http://127.0.0.1:5500/Master/Calculator/index.html';
+    const url = 'https://upyy-calculator.netlify.app';
     http.onreadystatechange = function(){
         if(this.readyState == 4 && this.status == 200){
-
+ 
         document.getElementById('app0').innerHTML = this.responseText;  
         }
     }
@@ -29,7 +29,7 @@ function play1(){
 
 function play2(){
     const http = new XMLHttpRequest();
-    const url = 'http://127.0.0.1:5500/Master/Chat/index.html';
+    const url = 'https://upyy-chat.netlify.app ';
     http.onreadystatechange = function(){
         if(this.readyState == 4 && this.status == 200){
 
@@ -42,7 +42,7 @@ function play2(){
 
 function play3(){
     const http = new XMLHttpRequest();
-    const url = "http://127.0.0.1:5500/Master/TicTacToe/index.html"
+    const url = "https://upyy-tictactoe.netlify.app"
 
     http.onreadystatechange = function(){
         if(this.readyState == 4 && this.status == 200){
@@ -52,6 +52,103 @@ function play3(){
     http.open("GET", url, true);
     http.send();
 }
+function play4(){
+    const http = new XMLHttpRequest();
+    const url = "https://upyy-contador.netlify.app"
+
+    http.onreadystatechange = function(){
+        if(this.readyState == 4 && this.status == 200){
+            document.getElementById('app0').innerHTML = this.responseText;
+        }
+    }
+    http.open("GET", url, true);
+    http.send();
+}
+function play5(){
+    const http = new XMLHttpRequest();
+    const url = "https://upyy-eventos.netlify.app"
+
+    http.onreadystatechange = function(){
+        if(this.readyState == 4 && this.status == 200){
+            document.getElementById('app0').innerHTML = this.responseText;
+        }
+    }
+    http.open("GET", url, true);
+    http.send();
+}
+function play6(){
+    const http = new XMLHttpRequest();
+    const url = "https://upyy-teclado.netlify.app"
+
+    http.onreadystatechange = function(){
+        if(this.readyState == 4 && this.status == 200){
+            document.getElementById('app0').innerHTML = this.responseText;
+        }
+    }
+    http.open("GET", url, true);
+    http.send();
+}
+function play7(){
+    const http = new XMLHttpRequest();
+    const url = "https://upyy-jsontocsv.netlify.app"
+
+    http.onreadystatechange = function(){
+        if(this.readyState == 4 && this.status == 200){
+            document.getElementById('app0').innerHTML = this.responseText;
+        }
+    }
+    http.open("GET", url, true);
+    http.send();
+}
+function play8(){
+    const http = new XMLHttpRequest();
+    const url = "https://upyy-comment.netlify.app "
+
+    http.onreadystatechange = function(){
+        if(this.readyState == 4 && this.status == 200){
+            document.getElementById('app0').innerHTML = this.responseText;
+        }
+    }
+    http.open("GET", url, true);
+    http.send();
+}
+function play9(){
+    const http = new XMLHttpRequest();
+    const url = "https://upyy-carrito.netlify.app"
+
+    http.onreadystatechange = function(){
+        if(this.readyState == 4 && this.status == 200){
+            document.getElementById('app0').innerHTML = this.responseText;
+        }
+    }
+    http.open("GET", url, true);
+    http.send();
+}
+function play10(){
+    const http = new XMLHttpRequest();
+    const url = "https://upyy-exquiva.netlify.app"
+
+    http.onreadystatechange = function(){
+        if(this.readyState == 4 && this.status == 200){
+            document.getElementById('app0').innerHTML = this.responseText;
+        }
+    }
+    http.open("GET", url, true);
+    http.send();
+}
+function play11(){
+    const http = new XMLHttpRequest();
+    const url = "https://upyy-memoria.netlify.app"
+
+    http.onreadystatechange = function(){
+        if(this.readyState == 4 && this.status == 200){
+            document.getElementById('app0').innerHTML = this.responseText;
+        }
+    }
+    http.open("GET", url, true);
+    http.send();
+}
+ 
 
  
 //
