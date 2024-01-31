@@ -15,16 +15,9 @@ ses.addEventListener('click', function(){
 // }) ();
 
 function play1(){
-    const http = new XMLHttpRequest();
     const url = 'https://upyy-calculator.netlify.app';
-    http.onreadystatechange = function(){
-        if(this.readyState == 4 && this.status == 200){
- 
-        document.getElementById('app0').innerHTML = this.responseText;  
-        }
-    }
-    http.open("GET", url, true);
-    http.send();
+    window.location.href = url;
+
 }
 
 function play2(){
